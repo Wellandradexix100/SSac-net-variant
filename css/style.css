@@ -15,7 +15,7 @@
 
 .hero {
   position: relative;
-  background-image: url("/assets/background.jpg");
+  background-image: url("../assets/background.jpg");
   background-size: cover; /* Faz com que a imagem cubra toda a área do elemento */
   background-position: center; /* Centraliza a imagem para melhorar a visualização em diferentes tamanhos de tela */
   background-repeat: no-repeat; /* Evita que a imagem se repita */
