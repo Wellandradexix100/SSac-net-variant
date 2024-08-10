@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSAC NET FIBRA -- Provedor de Internet</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="text-white fixed-menu transparent-navbar">
+      <div class="container mx-auto flex items-center justify-between p-4">
+        <span class="text-2xl font-bold text-green-400"
+          ><a href="index.html">SSAC NET</a></span
+        >
+        <button class="text-3xl md:hidden" onclick="toggleMenu()">☰</button>
+        <nav class="hidden md:flex">
+          <ul class="flex space-x-4">
+            <li>
+              <a href="index.html" class="hover:bg-green-700 p-2 rounded"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:bg-green-700 p-2 rounded"
+                >Área do cliente</a
+              >
+            </li>
+            <li>
+              <a href="#planos" class="hover:bg-green-700 p-2 rounded"
+                >Planos</a
+              >
+            </li>
+            <li>
+              <a href="#about" class="hover:bg-green-700 p-2 rounded"
+                >Sobre nós</a
+              >
+            </li>
+            <li>
+              <a href="#contato" class="hover:bg-green-700 p-2 rounded"
+                >Contato</a
+              >
+            </li>
+            <li>
+              <a href="#links" class="hover:bg-green-700 p-2 rounded">Links</a>
+            </li>
+          </ul>
+        </nav>
+        <nav
+          id="mobile-menu"
+          class="absolute top-16 right-0 transparent-navbar w-full hidden flex-col md:hidden"
+        >
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="index.html"
+                class="block p-4 text-white hover:bg-gray-700"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block p-4 text-white hover:bg-gray-700"
+                >Área do cliente</a
+              >
+            </li>
+            <li>
+              <a href="#planos" class="block p-4 text-white hover:bg-gray-700"
+                >Planos</a
+              >
+            </li>
+            <li>
+              <a href="#about" class="block p-4 text-white hover:bg-gray-700"
+                >Sobre nós</a
+              >
+            </li>
+            <li>
+              <a href="#contato" class="block p-4 text-white hover:bg-gray-700"
+                >Contato</a
+              >
+            </li>
+            <li>
+              <a href="#links" class="block p-4 text-white hover:bg-gray-700"
+                >Links</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="flex flex-col md:flex-row items-center py-15 bg-white-600 text-gray hero pt-20 md:pt-0"
+      >
+        <div class="md:w-1/2 p-6 text-center md:text-left">
+          <h1 class="text-outline text-white text-4xl font-bold mb-4">
+            Conecte-se ao <span class="text-green-400">Futuro</span>
+          </h1>
+          <p class="text-outline text-white mb-6 font-roboto">
+            Aproveite a internet mais rápida e confiável com a SSAC Net.
+            <br />Conecte sua casa ou empresa com nossos planos sob medida.
+          </p>
+          <a
+            href="missao.html"
+            target="_blank"
+            class="text-outline bg-yellow-500 text-white py-2 px-6 rounded-full hover:bg-yellow-600"
+            >Saiba Mais</a
+          >
+          <p class="text-white valores">*Conheça a nossa missão...</p>
+        </div>
+        <div class="md:w-1/2 p-6">
+          <img src="assets/hero.png  " alt="Imagem do serviço" />
+        </div>
+      </section>
+
+      <!-- Planos -->
+      <section id="planos" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 lg:px-20">
+            <h2 class="text-3xl font-roboto text-center mb-8">Nossos Planos</h2>
+            <div id="planos-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10"></div>
+        </div>
+    </section>
+    
+      <!-- Sobre Nós -->
+      <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4 lg:px-20">
+          <h2 class="text-3xl font-bold text-center mb-8">Sobre Nós</h2>
+          <div class="text-center mb-12">
+            <p class="text-lg text-gray-600">
+              A SSAC NET é uma empresa dedicada a fornecer serviços de internet
+              de alta qualidade. Com anos de experiência, nos esforçamos para
+              oferecer a melhor conexão para nossos clientes, com suporte
+              excepcional e soluções personalizadas.
+            </p>
+          </div>
+          <h3 class="text-2xl font-bold text-center mb-6">
+            O que nossos clientes dizem
+          </h3>
+            <div id="testimonials" class="swiper-container">
+                <div class="swiper-wrapper"></div>
+            </div>
+            <!-- Adicionando a barra de navegação -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Contato -->
+      <section id="contato" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 lg:px-20 flex flex-col md:flex-row">
+          <!-- Mapa -->
+          <div class="md:w-1/2 mb-8 md:mb-0 mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-6">Nosso Endereço</h2>
+            <div class="w-full h-64 flex justify-center">
+              <iframe
+                class="w-full md:w-3/4 h-full"
+                title="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15800.281839590043!2d-34.9411882!3d-8.0942974!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1f14236980d7%3A0x669935b1066da4b4!2sSSACNETFIBRA%20TELECOM!5e0!3m2!1spt-BR!2sbr!4v1722810333616!5m2!1spt-BR!2sbr"
+                allowfullscreen=""
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Formulário de Contato -->
+          <div class="md:w-1/2">
+            <h2 class="text-3xl font-bold text-center mb-6">
+              Entre em Contato
+            </h2>
+            <form
+              action="mailto:seuemail@dominio.com"
+              method="post"
+              enctype="text/plain"
+            >
+              <div class="mb-4">
+                <label for="name" class="block text-gray-700 font-semibold mb-2"
+                  >Nome:</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="w-full p-2 border border-gray-300 rounded-lg"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label
+                  for="email"
+                  class="block text-gray-700 font-semibold mb-2"
+                  >Telefone:</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full p-2 border border-gray-300 rounded-lg"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label
+                  for="email"
+                  class="block text-gray-700 font-semibold mb-2"
+                  >Email:</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full p-2 border border-gray-300 rounded-lg"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label
+                  for="message"
+                  class="block text-gray-700 font-semibold mb-2"
+                  >Mensagem:</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  class="w-full p-2 border border-gray-300 rounded-lg"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600"
+              >
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer poppins-bold" id="links">
+      <div class="footer-content container">
+        <div class="footer-info flex flex-wrap">
+          <div class="footer-info-item flex-1">
+            <i class="fas fa-map fa-3x"></i>
+            <p><strong>Localização</strong></p>
+            <p>R. Ponta Porã, 113 - Barro</p>
+          </div>
+          <div class="footer-info-item flex-1">
+            <i class="fas fa-phone fa-3x"></i>
+            <p><strong>Fale conosco</strong></p>
+            <p>(81) 99731-6898 (WhatsApp)</p>
+          </div>
+          <div class="footer-info-item flex-1">
+            <i class="fas fa-envelope fa-3x"></i>
+            <p><strong>Envie um email</strong></p>
+            <p>suportessacnet@gmail.com</p>
+          </div>
+          <div class="footer-info-item flex-1">
+            <i class="fas fa-clock fa-3x"></i>
+            <p><strong>Horário de funcionamento</strong></p>
+            <p>08:00 - 19:00h</p>
+            <p>Suporte remoto 24h</p>
+          </div>
+        </div>
+        <div
+          class="container footer-links flex-wrap mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3"
+        >
+          <div class="footer-links-column flex-1">
+            <h4 class="text-green-500">Links rápidos</h4>
+            <ul>
+              <li><a href="#sobre">Sobre</a></li>
+              <li>
+                <a
+                  href="https://www.gov.br/anatel/pt-br"
+                  rel="noopener"
+                  target="_blank"
+                  >Blog</a
+                >
+              </li>
+              <li><a href="#contato">Contato</a></li>
+              <li><a href="missao.html" target="_blank">Missão</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-column flex-1">
+            <h4 class="text-green-500">Links Casuais</h4>
+            <ul>
+              <li>
+                <a href="privacidade.html" target="_blank"
+                  >Política de Privacidade</a
+                >
+              </li>
+              <li><a href="termos.html" target="_blank">Termos de Uso</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-column flex-1">
+            <div class="social-container">
+              <p>
+                <strong class="text-green-500">SSACNET Fibra</strong
+                ><br />Trabalhando sempre para entregar o melhor <br />em
+                serviços de internet para sua casa.
+              </p>
+              <div class="social-icons">
+                <a
+                  href="https://www.instagram.com/ssacnetfibra/"
+                  rel="noopener"
+                  target="_blank"
+                  aria-label="Instagram"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="https://api.whatsapp.com/send?phone=+558197316898&text=Ol%C3%A1%20cheguei%20aqui%20atr%C3%A1ves%20do%20site."
+                  rel="noopener"
+                  target="_blank"
+                  aria-label="WhatsApp"
+                >
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100010870517575&locale=pt_BR"
+                  rel="noopener"
+                  target="_blank"
+                  aria-label="Facebook"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ant-thief mt-8 text-center">
+          <p>
+            &copy;2024 Desenvolvido por
+            <span
+              ><a
+                href="https://wa.me/message/RB5H7ZXR6R2KA1"
+                rel="noopener"
+                target="_blank"
+                >Wellington Andrade</a
+              ></span
+            >
+            - Todos os direitos reservados
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/function.js"></script>
+    <script src="js/testimonials.js"></script>
+    <script src="js/plans.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,216 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.valores {
+  font-size: 0.6rem;
+  padding-left: 1rem;
+  padding-top: 0.4rem;
+}
+
+.hero {
+  position: relative;
+  background-image: url("/assets/background.jpg");
+  background-size: cover; /* Faz com que a imagem cubra toda a área do elemento */
+  background-position: center; /* Centraliza a imagem para melhorar a visualização em diferentes tamanhos de tela */
+  background-repeat: no-repeat; /* Evita que a imagem se repita */
+  height: 100vh; /* Define a altura da seção para ocupar toda a altura da tela */
+  width: 100%; /* Garante que a largura seja 100% */
+}
+.hero img {
+  bottom: 0;
+  width: 100%;
+  height: auto; /* Mantém a proporção da imagem */
+  max-height: 100%; /* Garante que a imagem não exceda a altura da seção */
+  object-fit: cover; /* Cobre a área do contêiner sem distorcer a imagem */
+}
+.text-outline {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+@media (max-width: 76.8rem) {
+  .hero {
+    width: auto;
+    height: auto;
+  }
+
+  .hero img {
+    display: none;
+  }
+}
+
+.transparent-navbar {
+  background-color: rgba(40, 40, 40, 0.8);
+}
+.fixed-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Adicione isso ao seu arquivo CSS */
+.swiper-container {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden; /* Garante que nada vaze da tela */
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center; /* Centraliza o conteúdo do slide */
+  align-items: center;
+  text-align: center;
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-info {
+  margin-bottom: 2rem;
+}
+
+.footer-info-item {
+  padding-left: 4rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-info-item i {
+  margin-bottom: 0.5rem;
+}
+
+.footer-info-item p {
+  margin: 0;
+}
+
+.footer-links {
+  margin-bottom: 2rem;
+}
+
+.footer-links-column {
+  padding: 1rem 1rem;
+}
+
+.footer-links-column h4 {
+  padding-left: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.footer-links-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links-column ul li {
+  padding-left: 13rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links-column ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-container {
+  text-align: center;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  margin-right: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-icons i {
+  font-size: 1.5rem;
+}
+
+.ant-thief {
+  font-size: 0.875rem;
+}
+
+.ant-thief a {
+  color: #00bfae;
+  text-decoration: none;
+}
+
+.ant-thief a:hover {
+  text-decoration: underline;
+}
+
+i.fa-facebook {
+  color: blue;
+}
+
+i.fa-instagram {
+  background-image: linear-gradient(to bottom, #293fdc, #fb2f98, #fe9200);
+  -webkit-background-clip: text;
+  background-clip: text; /* Alguns navegadores precisam do prefixo */
+  -webkit-text-fill-color: transparent;
+  color: black;
+}
+
+i.fa-whatsapp {
+  color: rgb(9, 255, 0);
+}
+@media (max-width: 76.8rem) {
+  .social-container {
+    padding-left: 0;
+    text-align: center;
+  }
+  .footer .footer-info {
+    flex-direction: column; /* Empilha verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+  }
+
+  .footer .footer-info-item {
+    padding-left: 0;
+    width: auto; /* Ajusta a largura dos itens */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .footer .footer-links {
+    flex-direction: column; /* Empilha verticalmente para dispositivos móveis */
+    align-items: center; /* Centraliza horizontalmente */
+  }
+
+  .footer .footer-links-column {
+    width: 100%; /* Garante que a largura ocupe toda a área disponível */
+  }
+  .footer .footer-links-column ul :hover {
+    color: #09ff00;
+    text-decoration: none;
+  }
+
+  .footer-links-column ul li {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .footer-links-column h4 {
+    padding-left: 0;
+    text-align: center;
+  }
+}
