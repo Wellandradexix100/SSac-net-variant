@@ -1,86 +1,88 @@
 /* Reset de estilo básico */
-body, h1, h2, p, ul {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body,
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
 }
 
 header {
-    background: #53e200;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
+  background: #263672;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
 }
 
-
 header h1 {
-    font-size: 2em;
-    text-align: center;
+  font-size: 2em;
+  text-align: center;
 }
 
 main {
-    text-decoration: none;
-    padding: 2em;
+  text-decoration: none;
+  padding: 2em;
 }
 
 .content {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin-bottom: 1.5em;
-    padding: 2em;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5em;
+  padding: 2em;
 }
 
 .content h2 {
-    color: #53e200;
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
+  color: #53e200;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 .content p {
-    font-size: 1.1em;
-    margin-bottom: 1em;
+  font-size: 1.1em;
+  margin-bottom: 1em;
 }
 
 .content ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .content ul li {
-    padding: 0.5em 0;
+  padding: 0.5em 0;
 }
 
 footer {
-    background: #53e200;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    text-decoration: none;
+  background: #263672;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-decoration: none;
 }
 
 footer p a,
 footer p {
-    font-size: 0.9em;
-    text-decoration: none;
+  font-size: 0.9em;
+  text-decoration: none;
 }
 
-footer span{
-    background-image: linear-gradient(to right, #0400ff, #6628f8, #fe3300);
-    -webkit-background-clip: text;
-    background-clip: text; /* Alguns navegadores precisam do prefixo */
-    -webkit-text-fill-color: transparent;
-    color: black;
-    font-size: 1em;
-    
+footer span {
+  background-image: linear-gradient(to right, #e5ff00, #cbf828, #fee500);
+  -webkit-background-clip: text;
+  background-clip: text; /* Alguns navegadores precisam do prefixo */
+  -webkit-text-fill-color: transparent;
+  color: black;
+  font-size: 1em;
 }
