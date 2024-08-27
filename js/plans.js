@@ -5,7 +5,7 @@ function getPlanosHTML() {
                 <h3 class="text-2xl font-semibold mb-2">Plano Básico</h3>
                 <p class="text-xl text-gray-600 mb-4">200 MEGA - TV</p>
                 <p class="text-gray-500 mb-4">
-                    Ideal para quem procura uma<br> conexão estável e com boa
+                    Ideal para quem procura uma<br> <3 conexão estável e com boa
                     velocidade para navegação e streaming.
                 </p>
                 <p class="text-3xl font-bold text-center flex-col py-5">
